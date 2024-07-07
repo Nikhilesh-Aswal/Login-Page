@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Student Account</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Student Account</h1>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college" required>
+
+            <label for="university">University Name:</label>
+            <input type="text" id="university" name="university" required>
+
+            <label for="rollNo">University Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="button" onclick="displaySuccessMessage()">Submit</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <h2>Account Created</h2>
+            <p>Your student account has been created successfully!</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
